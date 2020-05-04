@@ -1,24 +1,20 @@
 package com.springframework.sfgpetclinic.model;
 
-public class Person {
-//    private Long id;
+import lombok.Data;
+
+import javax.persistence.*;
+
+@Entity
+public @Data
+class Person {
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+
+    @Column(name = "firstname")
     private String firstname;
+
+    @Column(name = "lastname")
     private String lastname;
 
-
-    public String getFirstname() {
-        return firstname;
-    }
-
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
-    }
-
-    public String getLastname() {
-        return lastname;
-    }
-
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
-    }
 }
