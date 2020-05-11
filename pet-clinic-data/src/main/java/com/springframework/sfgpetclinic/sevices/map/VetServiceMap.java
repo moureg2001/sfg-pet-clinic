@@ -1,11 +1,11 @@
 package com.springframework.sfgpetclinic.sevices.map;
 
 import com.springframework.sfgpetclinic.model.Vet;
-import com.springframework.sfgpetclinic.sevices.CrudService;
+import com.springframework.sfgpetclinic.sevices.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet,Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return null;
@@ -29,5 +29,10 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements Crud
     @Override
     public Vet findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Vet findByLast(String lastName) {
+        return null;
     }
 }
