@@ -8,10 +8,8 @@ import java.util.Set;
 
 @Service
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
-    @Override
-    public Set<Vet> findAll() {
-        return null;
-    }
+
+
 
     @Override
     public void deleteById(Long id) {
@@ -36,5 +34,10 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
     @Override
     public Vet findByLast(String lastName) {
         return null;
+    }
+
+    @Override
+    public Set<Vet> findAll() {
+        return super.findAll();
     }
 }

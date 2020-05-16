@@ -1,14 +1,10 @@
 package com.springframework.sfgpetclinic.model;
 
 
-import javax.persistence.*;
+public class Specialty extends NamedEntity {
 
-@Entity
-@Table(name = "specialties")
-public class Specialty {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-    private String name;
+//    @Id
+//    @GeneratedValue(strategy = GenerationType.AUTO)
+//    private Long id;
+//    private String name;
 }
