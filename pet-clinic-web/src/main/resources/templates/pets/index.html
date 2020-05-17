@@ -7,5 +7,26 @@
 <body>
 <h1 th:text="'List of Pets'">List of Pets ...</h1>
 
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Birthdate</th>
+            <th>Type</th>
+            <th>Owner</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="pet : ${pets}">
+            <td th:text="${pet?.id}">1</td>
+            <td th:text="${pet?.name}">1</td>
+            <td th:text="${pet?.birthDate}"></td>
+            <td th:text="${pet?.type.name}">Cat</td>
+            <td th:text="${pet?.owner.firstname}">Billy</td>
+<!--            <td th:text="${pet?.owner.firstname}">Billy</td>-->
+        </tr>
+    </tbody>
+</table>
 </body>
 </html>
