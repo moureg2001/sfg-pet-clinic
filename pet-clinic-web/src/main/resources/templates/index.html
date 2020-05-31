@@ -1,11 +1,79 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pet Clinic Index</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="../static/resources/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/resources/css/normalize.css" rel="stylesheet">
+    <link href="../static/resources/css/style.css" rel="stylesheet">
 </head>
 <body>
-<h1 th:text="'Home Page'">Index Page ...</h1>
+<!--<h1 th:text="'Home Page'">Index Page ...</h1>-->
+<!--<h2>-->
+<!--    <th:text key="#{welcome}"/>-->
+<!--    Welcome-->
+<!--</h2>-->
+<!--<div class="row">-->
+<!--    <div class="col-md-12">-->
+<!--        <img class="img-responsive" alt="A cat and a dog" src="../static/resources/images/"/>-->
+<!--    </div>-->
+<!--</div>-->
+<div class="container-fluid">
+    <header class="row">
+        <div class="col-8">
+            <nav class="navbar navbar-dark bg-dark">
+                <a href="#">Home</a>
+                <a href="#">Owners</a>
+                <a href="#">Pets</a>
+                <a href="#">Veterinarians </a>
 
+                <a class="navbar-brand" href="#">Navbar w/ text</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+      Navbar text with an inline element
+    </span>
+                </div>
+                <!--        <a href="#"></a>-->
+            </nav>
+        </div>
+        <div class="col-4">
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <section>
+
+    </section>
+    <main>
+
+    </main>
+    <footer class="row">
+
+    </footer>
+
+</div>
+<script rel="script" src="../static/resources/js/jquery-3.5.1.min.js"/>
+<script rel="script" src="../static/resources/js/bootstrap.min.js"/>
+<!--<script rel="script" src="../static/resources/js/bootstrap.min.js"/>-->
+<script rel="script" src="../static/resources/js/bootstrap.bundle.min.js"/>
 </body>
 </html>
